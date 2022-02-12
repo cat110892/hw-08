@@ -1,0 +1,99 @@
+
+.header {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #ECECEC;
+}
+
+.heder__logo {
+    margin-right: 93px;
+}
+
+.header-list {
+    display: flex;
+}
+
+
+.header-nav {
+    display: flex;
+    align-items: center;
+}
+
+
+.heder__container {
+    display: flex;
+    align-items: center;
+}
+
+
+.heder-container-box {
+    display: flex;
+    margin-left: auto;
+    }
+
+
+.header-item:not(:last-child) {
+    margin-right: 50px;
+}
+
+.header-link {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--header-text-color);
+    background-color: transparent;
+    transition: color var(--transition-duration) , var(--main-cubic);
+    position: relative;
+}
+
+.header-link.activ::after {
+    content: "";
+    width: 100%;
+    height: 4px;
+    background-color: var(--accent-color);
+    position: absolute;
+    display: block;
+    border-radius: 2px;
+    bottom: -33px;
+    left: 0;
+}
+
+    .header-link:focus,
+    .header-link:hover {
+    color: var(--accent-color);
+}
+
+
+
+.header-tel {
+    display: inline-flex;
+    margin-left: 50px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--main-text-color)
+    
+}
+
+.header-mail {
+    display: inline-flex;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--main-text-color)
+    
+}
+.heder-tel-icon {
+    margin-right: 10px;
+    fill: currentColor;
+}
+.heder-mail-icon {
+    margin-right: 10px;
+    fill: currentColor;
+}
+
+
+

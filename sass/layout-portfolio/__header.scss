@@ -1,0 +1,40 @@
+
+.header-tel-portfolio {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: #757575;
+}
+
+.header-mail-portfolio {
+    font-weight: 500;
+    font-size: 14px;
+    line-height:1.14;
+    letter-spacing: 0.02em;
+    color: #757575;
+}
+
+
+.header-link-portfolio-focus:focus,
+.header-link-portfolio-focus:hover {
+color: var(--accent-color);
+}
+
+.header-link-portfolio {
+    font-weight: 500;
+    font-size: 14px;
+    line-height:1.14;
+    letter-spacing: 0.02em;
+    color: #2196F3;
+}
+
+.backdrop {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.2);
+    position: fixed;
+    top: 0;
+    transition: opacity 250ms,visibility 250ms ;
+}
+
