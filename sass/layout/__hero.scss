@@ -1,21 +1,62 @@
     .hero__container {
-        max-width: 1600px;
+        // max-width: 1600px;
         margin-left: auto;
         margin-right: auto;
         background-color: var(--main-text-color);
         background-image: 
         linear-gradient(rgba(55, 47, 58, 0.4),
         rgba(86, 86, 92, 0.4)),
-        url(../img.1p/Img.hero.jpg); 
+        url(../img.1p/hero-bg-mob-1x.jpg);
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
-    }
+        @media (min-device-pixel-ratio: 2),
+               (min-resolution: 192dpi),
+               (min-resolution: 2dppx){
+        background-image:            
+        linear-gradient(rgba(55, 47, 58, 0.4),
+        rgba(86, 86, 92, 0.4)),
+        url(../img.1p/hero-bg-mob-2x.jpg);           
+               } 
+            }
+
+        @include tab {
+            background-image:            
+            linear-gradient(rgba(55, 47, 58, 0.4),
+            rgba(86, 86, 92, 0.4)),
+            url(../img.1p/hero-bg-tab-1x.jpg);
+            
+            @media (min-device-pixel-ratio: 2),
+               (min-resolution: 192dpi),
+               (min-resolution: 2dppx){
+        background-image:            
+        linear-gradient(rgba(55, 47, 58, 0.4),
+        rgba(86, 86, 92, 0.4)),
+        url(../img.1p/hero-bg-tab-2x.jpg);           
+               } 
+        }
+
+        @include desk {
+            background-image:            
+            linear-gradient(rgba(55, 47, 58, 0.4),
+            rgba(86, 86, 92, 0.4)),
+            url(../img.1p/hero-bg-1x.jpg);
+            
+            @media (min-device-pixel-ratio: 2),
+               (min-resolution: 192dpi),
+               (min-resolution: 2dppx){
+        background-image:            
+        linear-gradient(rgba(55, 47, 58, 0.4),
+        rgba(86, 86, 92, 0.4)),
+        url(../img.1p/hero-bg-2x.jpg);           
+               }     
+        }
     
     
     .hero {
-        padding-top: 200px ;
-        padding-bottom: 200px;
+        // padding-top: 200px ;
+        // padding-bottom: 200px;
+        padding: 118px 60px 118px 60px;
     }
     
     
@@ -50,13 +91,13 @@
     
     .hero-text {
         font-weight: 900;
-        font-size: 44px;
-        line-height: 1.37;
+        font-size: 26px;
+        line-height: 1.6;
         text-align: center;
         letter-spacing: 0.06em;
         text-transform: uppercase;
         color: var(--main-title-color);
-        width: 696px;
+        width: 360px;
         
     
         margin-bottom: 30px;

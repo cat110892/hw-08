@@ -15,9 +15,9 @@
 
 
 <!--------heder-------->
-<!-- <body>
+<body>
        <header class="header">
-         <div class="container heder__container">
+         <div class=" heder__container container">
            <nav class="header-nav">
             <a href="/" class="logo link heder__logo animate__animated animate__pulse" lang="en"><span class="logo-begin link">Web</span>Studio</a>
                <ul class="list header-list">
@@ -47,25 +47,97 @@
                      width="10" 
                      height="16" >
                    <use href="./img.css/symbol-defs.svg#icon-smartphone">
-                   </use> 
+                   </use>
                  </svg> 
                  +38 096 111 11 11</a></li>
            </ul>
+           
+           
+           
+           
+           <button type="button" class="menu-open-btn" data-menu-open>
+            <svg class="mob-open-icon"
+            width="40"
+            height="40">
+            <use href="./svg-close/symbol-defs.svg#icon-menu_40px-1">
+               
+            </use>
+          </svg>
+           </button>
+
           </div>
-        </header> -->
+          <div class="mob-menu is-hidden" data-menu>
+            <div class="container-menu">
+              <div class="mob-menu-top">
+            <button type="button"class="menu-close-btn" data-menu-close>
+              
+              <svg class="mob-close-icon"
+                      width="11"
+                      height="11">
+                      <use href="./svg/symbol-defs.svg#icon-close-black">
+                         
+                      </use>
+                    </svg>
+
+            </button> 
+               <ul class="list mob-menu-list">
+                <li class="mob-menu-list_item"><a class="link mob-menu-list_link activ" href="index.html">Студия</a></li>
+                <li class="mob-menu-list_item"><a class="link mob-menu-list_link" href="portfolio.html">Портфолио</a></li>
+                <li class="mob-menu-list_item"><a class="link mob-menu-list_link" href="">Контакты</a></li>
+               </ul>
+              </div>
+              <div class="mob-menu-botom">
+                <div class="mob-connect"> 
+                  
+                  <ul class="mob-tel-mail list">
+                    <li class="mob-tel"> <a class="link mob-connect_tel" 
+                     href="tel:+380961111111">+38 096 111 11 11</a> </li>
+
+                     <li class="mob-mail"> <a class="link mob-connect_mail "
+                     href="mailto:info@devstudio.com">info@devstudio.com</a> </li>
+                    </ul>
+                </div>
+               
+
+
+               <ul class="mob-list list">
+                <li class="mob-item">
+                  <a href="" class="mob__icon link">Instagram
+                  </a>
+                 </li>
+       
+                 <li class="mob-item">
+                   <a href="" class="mob__icon link">Twitter
+                   </a>
+                  </li>
+       
+                  <li class="mob-item">
+                   <a href="" class="mob__icon link">Facebook
+                   </a>
+                  </li>
+       
+                  <li class="mob-item">
+                   <a href="" class="mob__icon link">LinkedIn
+                   </a>
+                  </li>
+              </ul>
+          </div>
+        </div>
+        </div>
+        </header>
 
 <!-----------hero--------------------->
  
-       <!-- <main class="">
-             <section class="hero hero__container">
+       <main class="">
+             <section class="hero hero__container container ">
                  <h1 class="hero-text" > Эффективные решения для вашего бизнеса</h1>
                  <button class="hero__btn hero-link " type="button" data-modal-open > Заказать услугу </button>
-             </section> -->
+             </section>
 
 
 
 <!--------about-------->             
-             <section class="about">
+              <section class="about">
                <div class="container">
                 <h2 hidden>преймущество</h2>
                  <ul class="about-list list">
@@ -128,11 +200,11 @@
                     </li>
                 </ul>
               </div>
-             </section>
-
+             </section> 
+ 
 
 <!----------about-second--------------->
-             <!-- <section class="about-second">
+           <section class="about-second">
                <h2 class="about-second-title">Чем мы занимаемся</h2>
                 <ul class="list about-second-list">
                   <li class="about-second-img"> <img src="./img.1p/img1.jpg"
@@ -158,21 +230,48 @@
                        />
                        <p class="about-second-text">Десктопные приложения</p>
                 </li>  
-        </ul> -->
-             </section>
+        </ul> 
+             </section> 
 
 
 <!--------------about-command------------>             
-             <!-- <section class="about-command">
-               <div class="container-about-command">
+             <section class="about-command">
+               <div class="container-about-command container">
               
          <h2 class="about-command-title">Наша команда</h2>
           <ul class="list command-list">
-            <li class="command-item"> <img src="./img.1p/img.command1.jpg"
+            <li class="command-item"> 
+              <picture>
+              
+                <source srcset="
+                ./img.1p/img.command-comp/img.command-comp-1-1x.jpg
+                ./img.1p/img.command-comp/img.command-comp-1-2x.jpg"
+                media="(min-width:1200px)"/>
+                
+
+                <source srcset="
+                ./img.1p/img.command-tab/img.command-tab-1-1x.jpg
+                ./img.1p/img.command-tab/img.command-tab-1-2x.jpg"
+                media="(min-width:768px)"/>
+
+                <source srcset="
+                ./img.1p/img.command-tel/img.command-tel-1-1x.jpg
+                ./img.1p/img.command-tel/img.command-tel-1-2x.jpg"
+                media="(min-width:480px)"/>
+                <img  src="./img.1p/img.command1.jpg"
+                alt="команда">
+                        
+                               
+              </picture>
+              <!-- <img srcset="
+              ./img.1p/img.command-comp/img.command-comp-1-1x.jpg
+              ./img.1p/img.command-comp/img.command-comp-1-2x.jpg"
+
+              src="./img.1p/img.command1.jpg"
                       alt="команда"
                       width="270"
                       height="260"
-                />
+                /> -->
                 <div class="command-item-bottom">
                   <h3 class="about-command-title-name">Игорь Демьяненко</h3>
                     <p class="about-command-speciality" lang="en"> Product Designer </p>
@@ -227,12 +326,38 @@
                 </div>
             </li>
 
-             <li class="command-item"> <img src="./img.1p/img.command2.jpg"
+             <li class="command-item"> 
+              <picture>
+              
+                <source srcset="
+                ./img.1p/img.command-comp/img.command-comp-2-1x.jpg
+                ./img.1p/img.command-comp/img.command-comp-2-2x.jpg"
+                media="(min-width:1200px)"/>
+                
+
+                <source srcset="
+                ./img.1p/img.command-tab/img.command-tab-2-1x.jpg
+                ./img.1p/img.command-tab/img.command-tab-2-2x.jpg"
+                media="(min-width:768px)"/>
+
+                <source srcset="
+                ./img.1p/img.command-tel/img.command-tel-2-1x.jpg
+                ./img.1p/img.command-tel/img.command-tel-2-2x.jpg"
+                media="(min-width:480px)"/>
+                <img  src="./img.1p/img.command2.jpg"
+                alt="команда">
+                        
+                               
+              </picture> -->
+               <!-- <img srcset="
+               ./img.1p/img.command-comp/img.command-comp-2-1x.jpg
+               ./img.1p/img.command-comp/img.command-comp-2-2x.jpg"
+               src="./img.1p/img.command2.jpg"
                       alt="команда"
                       width="270"
                       height="260"
-                />
-                <div class="command-item-bottom">
+                /> -->
+                 <div class="command-item-bottom">
                   <h3 class="about-command-title-name">Ольга Репина</h3>
                   <p class="about-command-speciality" lang="en"> Frontend Developer </p>
                   <ul class="command-social-list list">
@@ -285,11 +410,38 @@
                 </div>
              </li>
 
-            <li class="command-item"> <img src="./img.1p/img.command3.jpg"
+            <li class="command-item">
+              <picture>
+              
+                <source srcset="
+                ./img.1p/img.command-comp/img.command-comp-3-1x.jpg
+                ./img.1p/img.command-comp/img.command-comp-3-2x.jpg"
+                media="(min-width:1200px)"/>
+                
+
+                <source srcset="
+                ./img.1p/img.command-tab/img.command-tab-3-1x.jpg
+                ./img.1p/img.command-tab/img.command-tab-3-2x.jpg"
+                media="(min-width:768px)"/>
+
+                <source srcset="
+                ./img.1p/img.command-tel/img.command-tel-3-1x.jpg
+                ./img.1p/img.command-tel/img.command-tel-3-2x.jpg"
+                media="(min-width:480px)"/>
+                <img  src="./img.1p/img.command3.jpg"
+                alt="команда">
+                        
+                               
+              </picture>
+              
+              <!-- <img srcset="
+              ./img.1p/img.command-comp/img.command-comp-3-1x.jpg
+              ./img.1p/img.command-comp/img.command-comp-3-2x.jpg"
+              src="./img.1p/img.command3.jpg"
                       alt="команда"
                       width="270"
                       height="260"
-                />
+                /> -->
                 <div class="command-item-bottom">
                   <h3 class="about-command-title-name">Николай Тарасов</h3>
                    <p class="about-command-speciality" lang="en"> Marketing </p>
@@ -343,11 +495,38 @@
                 </div>
             </li>
 
-            <li class="command-item"> <img src="./img.1p/img.command4.jpg"
+            <li class="command-item">
+              <picture>
+              
+                <source srcset="
+                ./img.1p/img.command-comp/img.command-comp-4-1x.jpg
+                ./img.1p/img.command-comp/img.command-comp-4-2x.jpg"
+                media="(min-width:1200px)"/>
+                
+
+                <source srcset="
+                ./img.1p/img.command-tab/img.command-tab-4-1x.jpg
+                ./img.1p/img.command-tab/img.command-tab-4-2x.jpg"
+                media="(min-width:768px)"/>
+
+                <source srcset="
+                ./img.1p/img.command-tel/img.command-tel-4-1x.jpg
+                ./img.1p/img.command-tel/img.command-tel-4-2x.jpg"
+                media="(min-width:480px)"/>
+                <img  src="./img.1p/img.command4.jpg"
+                alt="команда">
+                         
+                               
+              </picture>
+              
+              <!-- <img srcset="
+              ./img.1p/img.command-comp/img.command-comp-4-1x.jpg
+              ./img.1p/img.command-comp/img.command-comp-4-2x.jpg"
+               src="./img.1p/img.command4.jpg"
                       alt="команда"
                       width="270"
                       height="260"
-                />
+                /> -->
                 <div class="command-item-bottom">
                   <h3 class="about-command-title-name">Михаил Ермаков</h3>
                   <p class="about-command-speciality" lang="en"> UI Designer </p>
@@ -403,13 +582,13 @@
 
         </ul>
       </div>
-             </section> -->
+             </section>
 
 
 
 <!---------clients----------> 
-             <!-- <section class="clients">
-               <div class="container-clients">
+             <section class="clients">
+               <div class="container-clients container">
                 <h2 class="permanent-clients">Постоянные клиенты</h2>
                  <ul class="list-clients list">
                    <li class="title-clients">
@@ -480,10 +659,10 @@
                  </ul>
                </div>
 
-             </section> -->
+             </section>
 
 <!---------contacts---------->             
-             <!-- <footer class="contacts">
+            <footer class="contacts">
             <div class="footer-contacts container">
              <div>  
               <a href="/" class="logo-footer link" lang="en"><span class="logo-begin link">Web</span>Studio</a>
@@ -573,8 +752,8 @@
 
                </div>
             </div>
-             </footer>
-               -->
+             </footer> 
+               
              
              <div class="backdrop is-hidden " data-modal>
                 <div class="modal">
@@ -667,8 +846,7 @@
 
                </div>
 </main>
-<script src="./js/modal.js">
-                  
-</script>
+<script src="./js/modal.js"> </script>
+<script src="./js/menu.js"> </script>
 </body>
 </html>

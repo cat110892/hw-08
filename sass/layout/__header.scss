@@ -19,6 +19,9 @@
     align-items: center;
 }
 
+.header-nav {
+    display: none;
+}
 
 .heder__container {
     display: flex;
@@ -73,7 +76,9 @@
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
-    color: var(--main-text-color)
+    color: var(--main-text-color);
+    display: none;
+    
     
 }
 
@@ -83,7 +88,8 @@
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
-    color: var(--main-text-color)
+    color: var(--main-text-color);
+    display: none;
     
 }
 .heder-tel-icon {
@@ -97,3 +103,130 @@
 
 
 
+
+
+.container-menu {
+    width: 480px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+.menu-open-btn {
+    margin-left: auto;
+}
+
+.mob-menu {
+    position: fixed;
+    background-color: #ffffff;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1;
+    padding-top: 21px;
+    padding-bottom: 21px;
+    transition: left 250ms, visibility 250ms;
+    position: absolute;
+}
+
+.menu-close-btn {
+    margin-left: auto;
+    display: block;
+    margin-bottom: 9px;
+    border: none;
+    background-color: #ffffff;
+}
+
+.menu-open-btn {
+    border: none;
+    background-color: #ffffff;
+}
+
+.mob-menu-list_item {
+    &:not(:last-child) {
+        margin-bottom: 32px;
+    }
+}
+
+.menu-close-btn:focus,
+.menu-close-btn:hover {
+    color: var(--accent-color);
+}
+    
+
+.mob-menu-list_link {
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 1,17;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #212121;
+    padding-left: 40px;
+
+}
+
+.mob-menu-list_link:focus,
+.mob-menu-list_link:hover {
+    color: var(--accent-color);
+}
+
+.mob-connect_tel {
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 1,17;
+    letter-spacing: 0.02em;
+    color: #2196F3;
+    display: block;
+    margin-top: 302px;
+    padding-left: 40px;
+
+}
+
+.mob-connect_mail {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1,6;
+    letter-spacing: 0.02em;
+    color: #757575;
+    display: block;
+    margin-top: 32px;
+    padding-left: 40px;
+
+}
+.mob-list {
+    display: flex;
+    margin-top: 64px;
+    padding-left: 20px;
+    padding-bottom: 48px;
+}
+
+
+
+.mob-item {
+    margin-left: 20px;
+}
+
+
+.mob__icon {
+font-weight: 500;
+font-size: 18px;
+line-height: 1,2;
+letter-spacing: 0.02em;
+color: #2196F3;
+}
+
+.mob-menu .is-hidden {
+    left: 100%;
+}
+
+.mob-close-icon {
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    box-sizing: border-box;
+}

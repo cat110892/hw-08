@@ -1,21 +1,35 @@
 
 .about-command {
     background: #F5F4FA;
-    padding-top: 94px;
-    padding-bottom: 94px;
+    // padding-top: 94px;
+    // padding-bottom: 94px;
 
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    @media screen and (min-width:1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;     
+    }
 }
 
 .about-command-title {
     
     font-weight: 700;
-    font-size: 36px;
-    line-height: 1.16;
+    // font-size: 36px;
+    // line-height: 1.16;
     text-align: center;
     letter-spacing: 0.03em;
     margin-bottom: 50px;
-    color: var(--second-title-color)
+    color: var(--second-title-color);
+
+    font-size: 28px;
+    line-height: 1.17;
     
+    @media screen and (min-width:1200px) {
+    font-size: 36px;
+    line-height: 1.16  
+    }
 }
 
 
@@ -28,8 +42,8 @@
 }
 
 .command-item {
-
     margin-left: 30px;
+    margin-bottom: 30px;
     
 }
 
