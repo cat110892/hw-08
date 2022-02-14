@@ -8,6 +8,13 @@
     line-height: 1.19;
     letter-spacing: 0.03em;
     color: var(--main-title-color);
+
+    @media screen and (min-width:480px) {
+        text-align: center;
+        padding-left: 163px;
+    }
+
+
 }
 
 

@@ -23,7 +23,8 @@
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
     background-color: transparent;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1)
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 
 .contacts-link:focus,
@@ -33,6 +34,12 @@
 
 .contacts-item{
     margin-bottom: 9px;
+
+    @media screen and (min-width:480px) {
+        text-align: center;
+        padding-left: 124px;
+       }
+    
 }
 
 
@@ -46,7 +53,10 @@
     letter-spacing: 0.03em;
     color: #FFFFFF;
     background-color: transparent;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1)
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+
+    
 }
 
 .contacts-link-address:focus,
@@ -54,23 +64,22 @@
     color: var(--accent-color);
 } 
 
-.footer-contacts-mailing {
-    margin-left: auto;
-}
 
-
-.footer-contacts {
-    display: flex;
-    align-items: baseline;
-    
-}
 
 .join-list {
     display: flex;
+
 }
 
 .footer-contacts-icon {
     margin-left: 70px;
+
+    @media screen and (min-width:480px) {
+        text-align: center; 
+        padding-left: 167px;
+        margin-top: 60px;
+       }
+   
 }
 
 .join {
@@ -82,12 +91,17 @@ text-transform: uppercase;
 color: #FFFFFF;
 
 margin-bottom: 20px;
+
 }
 
 .join-item {
     width: 44px;
     height: 44px;
     margin-right: 10px;
+
+    @media screen and (min-width:480px) {
+        text-align: center; 
+       }
 }
 
 .join__icon {
@@ -111,53 +125,10 @@ margin-bottom: 20px;
 }
 
 
-.subscription-field {
-    display: flex;
-    align-items: flex-end;
-}
-
-.mailing {
-    font-weight: bold;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: #FFFFFF;    
-}
-
-.email {
-    margin-right: 12px;
-    width: 358px;
-    height: 50px;
-    padding: 16px;
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    box-sizing: border-box;
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-    border-radius: 4px;
-    outline: none;
-    background-color: transparent;
-    margin-top: 20px;
-    color: #ffffff
-}
 
 
-.submit__btn {
-    padding-left: 28px;
-    width: 200px;
-    height: 50px;
-    background-color: var(--accent-color);
-    color: white;
-    font-weight: bold;
-    border: none;
-    font-size: 16px;
-    line-height: 30px;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    letter-spacing: 0.06em;
-}
 
-.subscription-icon {
-    margin-left: 10px;
-    fill: white;
-}
+
+
+
+
