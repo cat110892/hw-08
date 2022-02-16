@@ -37,7 +37,7 @@
 
     @media screen and (min-width:480px) {
         text-align: center;
-        padding-left: 124px;
+        
        }
     
 }
@@ -69,14 +69,19 @@
 .join-list {
     display: flex;
 
+@media screen and (min-width:480px) {
+    margin-left: -35px;
+    
+    }
+
 }
 
 .footer-contacts-icon {
     margin-left: 70px;
 
     @media screen and (min-width:480px) {
-        text-align: center; 
-        padding-left: 167px;
+        
+        margin-left: 167px;
         margin-top: 60px;
        }
    

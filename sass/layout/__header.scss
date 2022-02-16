@@ -1,13 +1,15 @@
 
 .header {
-    padding-top: 25px;
-    padding-bottom: 25px;
-    border-bottom: 1px solid #ECECEC;
+    // padding-top: 25px;
+    // padding-bottom: 25px;
+    // border-bottom: 1px solid #ECECEC;
+
+    @media screen and (min-width:480px) {
+          
+       }
+   
 }
 
-.heder__logo {
-    margin-right: 93px;
-}
 
 .header-list {
     display: flex;
@@ -24,8 +26,13 @@
 }
 
 .heder__container {
-    display: flex;
-    align-items: center;
+    // display: flex;
+    // align-items: center;
+
+    @media screen and (min-width:480px) {
+       height: 60px;  
+       }
+   
 }
 
 

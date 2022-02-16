@@ -36,5 +36,22 @@
     font-size: 26px;
     line-height: 1.19;
     letter-spacing: 0.03em;
-    color: #212121;  
+    color: #212121; 
+    
+    @media screen and (min-width:480px) {
+        margin-left: 10px;
+
+       }
+   
+}
+
+
+
+.heder__logo {
+    margin-right: 93px;
+
+    @media screen and (min-width:480px) {
+        margin-right: 237px;   
+       }
+   
 }

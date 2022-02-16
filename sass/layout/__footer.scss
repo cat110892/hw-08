@@ -13,10 +13,13 @@
 
 
 .subscription-field {
-    display: flex;
-    align-items: flex-end;
+    // display: flex;
+    // align-items: flex-end;
 
-    
+    @media screen and (min-width:480px) {
+         
+       }
+   
 }
 
 
@@ -58,7 +61,8 @@
     letter-spacing: 0.06em;
 
     @media screen and (min-width:480px) {
-          
+        margin-top: 20px;  
+        margin-left: 140px;
        }
    
 }
@@ -78,6 +82,10 @@
     color: #ffffff;
 
 
+    @media screen and (min-width:480px) {
+        width: 450px;
+        margin-left: 7px;  
+       }
    
 }
 
